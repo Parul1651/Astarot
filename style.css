@@ -1,0 +1,38 @@
+ *{
+     padding: auto;
+     margin:auto; 
+ }
+ #game{
+     width: 1520px;
+     height: 715px;
+     margin: auto;
+     overflow: hidden;  
+ }
+
+ #block{
+      width : 60px;
+      height:  715 px;
+      background-color: midnightblue; 
+      position: relative;
+      left: 1520px;
+      animation: block 2s infinite linear;
+ }
+ @keyframes block{
+     0%{left:1520px}
+     100%{left:-60px }
+
+ }
+
+ #hole{
+     width: 60px;
+     height: 295px;
+     background-color: inherit;
+     left: 1520px;
+     top: -715px;
+     animation: block 2s infinite linear;
+
+ }
+
+ #character{
+     
+ }

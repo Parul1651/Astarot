@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <label>enter your name</label>
+
+    <input type='text' id='name' /><br>
+
+    <label>enter your location</label>
+
+    <select id='place' onchange='myFunc()'>
+
+        <option value='City Name1'>City Name1</option>
+
+        <option value='City Name2'>City Name2</option>
+
+        <option value='City Name3'>City Name3</option>
+
+        <option value='City Name4'>City Name4</option>
+
+        <option value='City Name5'>City Name5</option>
+
+    </select><br>
+
+    <span id='display'></span>
+
+</body>
+
+<script>
+
+    const name = document.getElementById('name')
+
+    const place = document.getElementById('place')
+
+    const inputHandler = function (e) {
+
+        document.getElementById('display').innerHTML.innerHTML = e.target.value;
+
+    }
+
+    function myFunc() {
+
+        var sentence = `my name is ${name.value} and i live in ${place.value}`;
+
+        document.getElementById('display').innerHTML = sentence;
+
+    }
+
+    name.addEventListener('keyup', (e) =>{
+
+        sentence = `my name is ${e.target.value} and i live in ${place.value}`
+
+        document.getElementById('display').innerHTML = sentence;
+
+    })
+
+</script>
+
+</html>
+
+
