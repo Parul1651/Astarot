@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: url(bgs.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.rating-css{
+    height: 250px;
+    width: 400px;
+    left: 50%;
+    top:25%;
+    padding: 0;
+
+}
+
+.rating-css div{
+    color: #ffe400;
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    padding: 20px 0;
+     
+}
+
+
+.rating-css input{
+    display: none;
+
+}
+
+.rating-css input + label{
+    font-size: 60px;
+    text-shadow: 1px 1px 0 #ffe400;
+    cursor: pointer;
+}
+
+.rating-css input:checked + label ~ label{
+    color:#838383;
+}
+
+.rating-css label:active{
+    transform: scale(0.8);
+    transition: 0.3s ease;
+}
+
+.textarea{
+    height: 100px;
+    width: 100%;
+    padding: 20px;
+    overflow: hidden;
+
+}
+
+
+ form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color:white;
+    border: 1px solid #333;
+    background: #222;
+    padding: 10px;
+    font-size: 17px;
+}
+
+.btn{
+    height: 45px;
+    width: 100%;
+    margin : 15px 0;
+}
+
+
+
+ form .btn button{
+    height: 100%;
+    width: 100%;
+    border: 1px solid #444;
+    outline:none;
+    background: #222;
+    color: #999;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+ form .btn button.hover{
+    background: #1b1b1b;
+}
